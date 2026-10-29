@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F8F6E9">
+    <title>Elara Studio | Descubra seu perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="#" class="logo">elara<span>studio.</span></a>
+        <a href="#quiz" class="nav-link">DESCUBRA SEU PERFIL ↗</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow"><span class="dot"></span> SEU FUTURO COMEÇA AQUI</span>
+                <h1>Você nasceu para<br>fazer algo <em>incrível.</em></h1>
+                <p>Descubra seus talentos, explore suas possibilidades e encontre uma carreira que combine com você.</p>
+                <a href="#quiz" class="primary-button">DESCOBRIR MEU PERFIL <span>↗</span></a>
+                <div class="hero-note">
+                    <span class="note-star">✳</span>
+                    <span>4 perguntas rápidas<br><strong>Um mundo de possibilidades</strong></span>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="art-shape shape-one"></div>
+                <div class="art-shape shape-two"></div>
+                <div class="art-card">
+                    <div class="art-top">
+                        <span>SEU PRÓXIMO CAPÍTULO</span><span>✳</span>
+                    </div>
+                    <div class="art-image">
+                        <img src="imagens/capa-profissional.jpg" alt="Mulher trabalhando em um ambiente profissional">
+                    </div>
+                    <div class="art-bottom">
+                        <span>IDEIAS GRANDES.</span>
+                        <span>FUTURO SEU.</span>
+                    </div>
+                </div>
+                <div class="floating-tag tag-top">✳ SEJA VOCÊ</div>
+                <div class="floating-tag tag-bottom">SEU TALENTO IMPORTA ↗</div>
+            </div>
+        </section>
+
+        <section class="ticker">
+            <span>CRIATIVIDADE</span><span>✳</span>
+            <span>DESCOBERTA</span><span>✳</span>
+            <span>PROPÓSITO</span><span>✳</span>
+            <span>FUTURO</span><span>✳</span>
+            <span>CRIATIVIDADE</span>
+        </section>
+
+        <section class="intro section-wrap">
+            <div>
+                <span class="eyebrow">01 / VAMOS COMEÇAR</span>
+                <h2>O futuro não precisa<br>estar todo <em>decidido.</em></h2>
+            </div>
+            <div class="intro-copy">
+                <p>Às vezes, tudo começa com uma pergunta: o que combina comigo?</p>
+                <p>Responda com sinceridade. Não existem respostas certas ou erradas. O objetivo é conhecer melhor seus
+                    interesses e descobrir caminhos que talvez você ainda não tenha considerado.</p>
+            </div>
+        </section>
+
+        <section class="quiz-section" id="quiz">
+            <div class="quiz-heading">
+                <span class="eyebrow">02 / SEU MOMENTO</span>
+                <h2>Vamos falar <em>sobre você.</em></h2>
+                <p>Preencha seus dados e escolha a alternativa que mais combina com você.</p>
+            </div>
+
+            <form id="profile-form">
+                <div class="personal-data">
+                    <label class="field">
+                        <span>COMO PODEMOS TE CHAMAR?</span>
+                        <input type="text" id="name" placeholder="Seu nome" maxlength="60" required>
+                    </label>
+                    <label class="field">
+                        <span>DATA DE NASCIMENTO</span>
+                        <input type="date" id="birthdate" required>
+                    </label>
+                </div>
+
+                <div class="progress-row">
+                    <span id="progress-label">0 DE 4 RESPONDIDAS</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-fill"></div>
+                </div>
+
+                <fieldset class="question" data-question="1">
+                    <legend><span class="question-number">01</span> Quando você tem um tempo livre, o que mais gosta de
+                        fazer?</legend>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q1" value="technology" required><span
+                                class="option-letter">A</span><span>Explorar tecnologia, jogos ou descobrir como as
+                                coisas funcionam.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q1" value="science"><span
+                                class="option-letter">B</span><span>Pesquisar assuntos interessantes e aprender coisas
+                                novas.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q1" value="creative"><span
+                                class="option-letter">C</span><span>Criar, desenhar, fotografar ou imaginar ideias
+                                diferentes.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q1" value="management"><span
+                                class="option-letter">D</span><span>Organizar planos, reunir pessoas e colocar ideias em
+                                prática.</span><span class="option-check">✓</span></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="question" data-question="2">
+                    <legend><span class="question-number">02</span> Qual dessas atividades mais chama sua atenção?
+                    </legend>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q2" value="technology" required><span
+                                class="option-letter">A</span><span>Desenvolver um aplicativo ou resolver um desafio
+                                digital.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q2" value="science"><span
+                                class="option-letter">B</span><span>Investigar uma descoberta e entender por que ela
+                                acontece.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q2" value="creative"><span
+                                class="option-letter">C</span><span>Criar uma identidade visual para uma
+                                marca.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q2" value="management"><span
+                                class="option-letter">D</span><span>Planejar um evento e coordenar uma
+                                equipe.</span><span class="option-check">✓</span></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="question" data-question="3">
+                    <legend><span class="question-number">03</span> Quando aparece um problema, qual costuma ser sua
+                        atitude?</legend>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q3" value="technology" required><span
+                                class="option-letter">A</span><span>Procuro uma solução prática e testo
+                                possibilidades.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q3" value="science"><span
+                                class="option-letter">B</span><span>Investigo as causas antes de tirar uma
+                                conclusão.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q3" value="creative"><span
+                                class="option-letter">C</span><span>Penso em alternativas originais que ninguém
+                                tentou.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q3" value="management"><span
+                                class="option-letter">D</span><span>Organizo as etapas e penso em como envolver as
+                                pessoas.</span><span class="option-check">✓</span></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="question" data-question="4">
+                    <legend><span class="question-number">04</span> O que você mais gostaria de encontrar em uma
+                        profissão?</legend>
+                    <div class="options">
+                        <label class="option"><input type="radio" name="q4" value="technology" required><span
+                                class="option-letter">A</span><span>Resolver desafios e construir soluções
+                                úteis.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q4" value="science"><span
+                                class="option-letter">B</span><span>Descobrir coisas novas e contribuir com
+                                conhecimento.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q4" value="creative"><span
+                                class="option-letter">C</span><span>Expressar ideias e transformar conceitos em
+                                projetos.</span><span class="option-check">✓</span></label>
+                        <label class="option"><input type="radio" name="q4" value="management"><span
+                                class="option-letter">D</span><span>Liderar projetos, tomar decisões e alcançar
+                                objetivos.</span><span class="option-check">✓</span></label>
+                    </div>
+                </fieldset>
+
+                <p class="form-error" id="form-error" role="alert"></p>
+                <button class="primary-button submit-button" type="submit">DESCOBRIR MEU RESULTADO
+                    <span>↗</span></button>
+                <p class="privacy-note">Este teste ajuda a explorar interesses, mas não determina sua profissão ideal.
+                </p>
+            </form>
+        </section>
+
+        <section class="results-section" id="results" hidden>
+            <div class="result-heading">
+                <span class="eyebrow">03 / SEU RESULTADO</span>
+                <p class="result-greeting" id="result-greeting"></p>
+                <h2>Seu próximo capítulo<br>pode ser <em>incrível.</em></h2>
+                <p class="result-description">Pelas suas respostas, este perfil pode combinar com seus interesses.
+                    Explore-o sem medo de descobrir novas possibilidades.</p>
+            </div>
+
+            <article class="result-card">
+                <div class="result-image">
+                    <img id="result-image" src="imagens/perfil-1.jpg" alt="Mulher trabalhando na carreira sugerida">
+                    <span class="result-stamp">SEU<br>PERFIL ✳</span>
+                </div>
+                <div class="result-info">
+                    <span class="eyebrow" id="result-category"></span>
+                    <h3 id="result-title"></h3>
+                    <p id="result-text"></p>
+                    <div class="skills-title">VOCÊ PODE GOSTAR DE</div>
+                    <div class="skill-list" id="result-skills"></div>
+                    <p class="result-extra" id="result-extra"></p>
+                    <button type="button" class="primary-button" id="retry-button">FAZER NOVAMENTE
+                        <span>↻</span></button>
+                </div>
+            </article>
+            <p class="result-disclaimer">Suas respostas não definem seu futuro. Você pode desenvolver novas habilidades
+                e mudar de ideia ao longo do tempo.</p>
+        </section>
+
+        <section class="career-section section-wrap">
+            <div class="career-heading">
+                <div>
+                    <span class="eyebrow">04 / UM UNIVERSO DE CAMINHOS</span>
+                    <h2>Quatro áreas.<br><em>Mil possibilidades.</em></h2>
+                </div>
+                <p>Conheça algumas opções e imagine tudo o que você pode criar a partir delas.</p>
+            </div>
+
+            <div class="career-grid">
+                <article class="career-card career-sage">
+                    <span class="career-index">01 / TECNOLOGIA</span>
+                    <div class="career-photo">
+                        <img src="imagens/perfil-1.jpg" alt="Mulher trabalhando com programação e tecnologia"
+                            loading="lazy">
+                    </div>
+                    <h3>Engenharia<br>de Software</h3>
+                    <p>Transformar ideias em ferramentas digitais e soluções para o dia a dia.</p>
+                    <span class="career-arrow">↗</span>
+                </article>
+
+                <article class="career-card career-cream">
+                    <span class="career-index">02 / CIÊNCIA</span>
+                    <div class="career-photo">
+                        <img src="imagens/perfil-2.jpg" alt="Mulher cientista trabalhando em laboratório"
+                            loading="lazy">
+                    </div>
+                    <h3>Pesquisa<br>Científica</h3>
+                    <p>Investigar perguntas, analisar evidências e ampliar o conhecimento.</p>
+                    <span class="career-arrow">↗</span>
+                </article>
+
+                <article class="career-card career-terra">
+                    <span class="career-index">03 / CRIATIVIDADE</span>
+                    <div class="career-photo">
+                        <img src="imagens/perfil-3.jpg" alt="Mulher trabalhando com design e direção de arte"
+                            loading="lazy">
+                    </div>
+                    <h3>Direção<br>de Arte</h3>
+                    <p>Dar forma visual a ideias, marcas, campanhas e histórias.</p>
+                    <span class="career-arrow">↗</span>
+                </article>
+
+                <article class="career-card career-brown">
+                    <span class="career-index">04 / ORGANIZAÇÃO</span>
+                    <div class="career-photo">
+                        <img src="imagens/perfil-4.jpg" alt="Mulher liderando uma reunião de trabalho" loading="lazy">
+                    </div>
+                    <h3>Gestão<br>de Projetos</h3>
+                    <p>Conectar pessoas, organizar etapas e transformar planos em realidade.</p>
+                    <span class="career-arrow">↗</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="closing">
+            <span class="closing-star">✳</span>
+            <span class="eyebrow">O SEU FUTURO É UMA CONSTRUÇÃO</span>
+            <h2>Sonhe grande.<br>Comece <em>por você.</em></h2>
+            <a href="#quiz" class="closing-link">EXPLORAR MEU PERFIL ↗</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#" class="logo">elara<span>studio.</span></a>
+        <p>Feito para inspirar novas possibilidades.</p>
+        <span>© 2026 Luiza Pedroso</span>
+    </footer>
+
+</body>
+
+</html>
